@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,31 +10,28 @@
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
 </head>
-<body style="background: linear-gradient(135deg,#153677,#4e085f);">
+
+<body >
     <div class="d-flex justify-content-center align-items-center vh-100">
-        <div class="card  p-5 border-dark w-100" style="max-width: 550px;" data-aos="zoom-in">
+        <div class="card  p-5 border-dark w-100"  data-aos="zoom-in">
             <div class="card-body text-center">
-                <h3 class="card-title play-regular play-bold">To-Do List <img src="image/icon.png" style="width: 10%;">
+                <h3 class="card-title play-regular play-bold">To-Do List <img src="image/icon.png">
                 </h3>
                 <p class="card-text">One task at a time, big results ahead.</p>
                 <div class="input-group mb-3">
                     <input type="text" class="form-control" placeholder="Enter your text"
-                        aria-label="Recipient’s username" aria-describedby="button-addon2">
-                    <button class="btn btn-outline-secondary btn-" type="button" id="task">Add</button>
+                        aria-label="Recipient’s username" aria-describedby="button-addon2" id="input-text">
+                    <button class="btn btn-outline-secondary btn-" type="button" onclick="addTask()">Add</button>
                 </div>
-                <!-- <div class="alert alert-primary mt-4 " role="alert">
-                    <p id="resultMsg">Good Luck Buddy</p>
-                </div> -->
             </div>
-        <ul >
-            <li class="ps-1"><img src="image/unchecked.png" style="width:3%;"> Task01srhgesrghershgr</li>
-            <li >Task 02rtshrthththtfh</li>
-            <li >Task 03rthrthrth</li>
-            <li >Task 04strhrthrth</li>
-        </ul>
+            <audio src="audio/ticksound.mp3" id="ticksound"></audio>
+            <audio src="audio/clicksound.mp3" id="clicksound"></audio>
+            <audio src="audio/cancelsound.mp3" id="cancelsound" ></audio>
+            <audio src="audio/errorsound.mp3"  id="errorsound"></audio>
+            <ul id="list-container">
+            </ul>
         </div>
-    </div>
-    <script src="app.js"></script>
+        <script src="app.js"></script>
 </body>
 
 </html>

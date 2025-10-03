@@ -1,13 +1,77 @@
 @import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap');
 
- .play-regular {
-     font-family: "Play", sans-serif;
-     font-weight: 400;
-     font-style: normal;
- }
+.play-regular {
+   font-family: "Play", sans-serif;
+   font-weight: 400;
+   font-style: normal;
+}
 
- .play-bold {
-     font-family: "Play", sans-serif;
-     font-weight: 700;
-     font-style: normal;
- }
+.play-bold {
+   font-family: "Play", sans-serif;
+   font-weight: 700;
+   font-style: normal;
+}
+
+body{
+   background: linear-gradient(135deg, #153677, #4e085f)
+}
+
+.card{
+   max-width: 550px;
+}
+
+img{
+   width: 10%;
+}
+
+
+ul li {
+   list-style: none;
+   font-size: 17px;
+   padding: 6px 8px 6px 50px;
+   user-select: none;
+   cursor: pointer;
+   user-select: none;
+   position: relative;
+}
+
+ul li::before {
+   content: '';
+   position: absolute;
+   height: 28px;
+   width: 28px;
+   border-radius: 50%;
+   background-image: url(image/unchecked.png);
+   background-size: cover;
+   background-position: center;
+   top: 6px;
+   left: 8px;
+}
+
+
+ul li.checked {       
+   color: #555;
+   text-decoration: line-through;
+}
+
+ul li.checked::before {
+   background-image: url(image/checked.png);
+}
+
+ul li span {
+   width: 40px;
+   height: 40px;
+   position: absolute;
+   top :5px;
+   width: 40px;
+   font-size: 22px;
+   line-height: 40px;
+   text-align: center;
+   right: 0;
+   color: #555;
+   border-radius: 50%;
+}
+
+ul li span:hover{
+   background: #edeef0;
+}
